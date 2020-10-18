@@ -23,3 +23,5 @@ Set your **ConnectionString**, **SendGrid_APIKEY** and **SendGrid_Mail** in *app
 }
 ```
 
+All Exceptions are logging to **Project Folder/logs/..** path..
+
