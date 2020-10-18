@@ -1,5 +1,4 @@
 ﻿using Hangfire;
-using Hangfire.Logging;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -61,10 +60,7 @@ namespace MonitoringApp
             {
                 app.UseDeveloperExceptionPage();
             }
-            else
-            {
-                app.UseExceptionHandler("/Home/Error");
-            }
+
             app.UseStaticFiles();
             app.ConfigureExceptionHandler();
             app.UseRouting();
